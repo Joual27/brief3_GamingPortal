@@ -1,0 +1,162 @@
+@media screen and (max-width : 767px){
+
+    .nav-items{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-items2{
+        font-weight: 600;
+        margin-right: 9.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+   
+   
+    .best-sellers-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        min-height: 1200px;
+    }
+
+    .product-card{
+        min-height: 300px;
+    }
+
+    #mobile-games{
+         display: flex;
+         flex-direction: column;
+         min-height: 1900px;
+         
+    }
+
+    #Desktop-games{
+         display: flex;
+         flex-direction: column;
+         min-height: 1900px;
+    }
+
+    .grid-item{
+        min-height: 300px;
+        width: 100%;
+    }
+
+    .main-grid-item1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-grid-item2{
+        min-height: 300px;
+        width: 100%;
+    }
+
+    #Desktop-games{
+        display: none;
+    }
+
+    .gaming-shop{
+        margin-top: -20rem;
+    }
+
+    .gaming-market{
+       flex-direction: column;
+       gap: 30px;
+    }
+    .gaming-card{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .first-grid-line{
+        gap : 20px;
+    }
+
+    .packs{
+        margin-top: -2rem;
+    }
+
+    .packs-container{
+        position: relative;
+        min-height: 600px;
+    }
+    .packs-head{
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        margin : 0 ;
+    }
+    .packs-head h3{
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
+    }
+    .sponsors{
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 3rem;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .packs-bg{
+        display: none;
+    }
+
+    .sponsor-card{
+        width: 45%;
+        margin-right: 72.5%;
+    }
+
+    footer h3{
+        font-size: 0.7rem;
+    }
+
+
+    .about-history{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+
+    #about2{
+        margin-top: 5rem;
+    }
+
+    .about-history img{
+        display: none;
+    }
+   
+    .history-desc{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .streamers-cards{
+        flex-direction: column;
+    }
+   
+    .streamer{
+        width: 80%;
+        margin: 1rem 10%;
+    }
+
+    #FAQ {
+        margin-top: -2rem;
+    }
+
+    .faq-img{
+        display: none;
+    }
+
+    .faq-container{
+        width: 100%;
+    }
+} 
