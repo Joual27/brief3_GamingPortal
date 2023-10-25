@@ -20,7 +20,7 @@ const competCards = document.querySelector(".compet-container");
 const competCard = document.querySelector(".compet-card");
 const competitionCards = document.querySelectorAll(".compet-container .compet-card");
 const contact = document.querySelector(".contact-form");
-const contactForm = document.querySelector(".contact-form form");
+const contact_Form = document.querySelector(".contact-form form");
 const contactImg = document.querySelector(".contact-form img");
 const testimonials = document.querySelector(".scroll-container");
 const testiSection = document.querySelector(".testimonials");
@@ -38,6 +38,14 @@ var competStyles = {
 }
 
 
+
+window.addEventListener("load", () =>{
+  if(window.innerWidth < 1023){
+    navbarItems.style.display = "none" ;
+    contactBtn.style.display = "none";
+    navToggler.style.display = "block";
+  }
+})
 
 
 
@@ -81,7 +89,7 @@ window.addEventListener("load", () => {
       }
     }) ;
     contact.style.flexDirection = "column-reverse";
-    contactForm.style.width = "100%";
+    contact_Form.style.width = "100%";
     contactImg.style.width = "100%";
     contactImg.style.height = "300px";
     contactImg.style.marginBottom = "20px";

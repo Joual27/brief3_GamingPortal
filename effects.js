@@ -7,9 +7,6 @@ const faqItems = document.querySelectorAll(".faq-item");
 const mobileNav = document.querySelector(".mobile-nav");
 
 
-
-
-
 faqItems.forEach((item) => {
     const faQuestion = item.querySelector(".faq-question");
     const faqAnswer = item.querySelector(".faq-answer");

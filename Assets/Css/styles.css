@@ -149,6 +149,7 @@ section{
     top: 12vh;
     width: 100%;
     text-align: center;
+    transition: 0.7s ease;
 }
 
 .mobile-nav ul{
@@ -384,6 +385,7 @@ section{
 .contact-form form{
     display: flex;
     flex-direction: column;
+    justify-content: space;
     width: 40%;
 }
 
@@ -397,7 +399,7 @@ section{
 }
 
 .form-item{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     height: 3rem;
     background-color: inherit;
     border: 2px solid #2CD3E1;
@@ -429,6 +431,10 @@ section{
     border: 1px solid #B931FC;
     border-bottom: 5px solid #B931FC;
     box-shadow: 0 0 5px #B931FC;
+}
+
+#message{
+    resize: none;
 }
 
 /*Footer*/
@@ -1016,12 +1022,16 @@ input[type="radio"]:checked{
 
 
 /*Payment*/
+
+
+.payments{
+    margin-top: 4rem;
+}
+
 .payment-section{
-      position: absolute;  
       height: 60vh; 
-      top: 20vh;
-      width: 60%;
-      left: 20%;
+      margin: 4rem 15%;
+      width: 70%;
       display: flex;
       justify-content: space-between;
 }
@@ -1029,6 +1039,7 @@ input[type="radio"]:checked{
 .payment-methods{
     width: 45%;
     border: 1px solid white;
+    box-shadow: 0 0 10px white;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -1038,26 +1049,41 @@ input[type="radio"]:checked{
 
 
 
+.methods img{
+    cursor: pointer;
+}
+
 .methods{
     display: flex;
+    gap: 20px;
     width: 100%;
-    justify-content: space-between;
+    margin: 1.5rem 0;  
+    
 }
+.banks h3, .cryptos h3{
+    text-decoration: underline;
+}
+
 .payment-methods h3{
     text-align: center;
+      
 }
 
 .order-summary{
     width: 45%;
     font-weight: 600;
     border: 1px solid white;
-}
+    box-shadow: 0 0 10px white; 
+ }
 
 .item-infos img{
    width: 50px;
    height: 50px;
    border-radius: 50%;
+   object-fit: cover;
 }
+
+
 
 .item-infos{
     width: 80%;
@@ -1067,16 +1093,21 @@ input[type="radio"]:checked{
     align-items: center;
 }
 
-.payment-title{
-    margin-top: 0.85rem;
-}
 
 
 .item-infos div{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
+.payment-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+   
+}
 
 
 .order-summary2{
@@ -1109,7 +1140,7 @@ input[type="radio"]:checked{
    align-items: center;
 }
 
-.pay button{
+.payBtn{
     padding: 0.5rem;
     width: 50%;
     background-color: #1DB954;
@@ -1133,4 +1164,22 @@ input[type="radio"]:checked{
 .pay a:hover{
     color: #B4B4B3;
     transition: 0.5s ease;
+}
+
+.backBtn{
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+}
+
+.error{
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0.3rem 0.5rem;
+}
+
+.payment-back{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

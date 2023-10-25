@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Assets/Css/styles.css">
+    <link rel="stylesheet" href="Assets/Css/responsive.css">
     <title>GP-X</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
             </div>
         </nav>
         <div class="mobile-nav">
-            <ul class="nav-items">
+            <ul class="nav-items2">
                 <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="#articles">Articles</a></li>
                 <li class="nav-item"><a href="games.html">Games</a></li>
@@ -163,14 +164,20 @@
             <h2>ANY FEEDBACKS ? EMAIL US HERE</h2>
             <hr>
         </div>
-        <div class="contact-form">
-            <form>
+        <div class="contact-form" >
+            <form id="contact-form">
+                <p class="error" id="nameError"> </p>
                 <input type="text" id="name" class="form-item" placeholder="Your Name ...">
-                <input type="email" id="email" class="form-item" placeholder="Your Email ...">
+                <p class="error" id="numberError"> </p>
+                <input type="text" id="number" class="form-item" placeholder="Your Number ...">
+                <p class="error" id="emailError"> </p>
+                <input type="text" id="email" class="form-item" placeholder="Your Email ...">
+                <p class="error" id="messageError"> </p>
                 <textarea id="message" class="form-item" cols="30" rows="10" placeholder="Your Message ..."></textarea>
-                <button class="btn" id="submit">Send Now!</button>
+                <input class="btn" type="submit" id="submitBtn" value="Send Now!">
             </form>
             <img src="Assets/Pictures/contact.jpg" alt="">
+            
         </div>
     </section>
     
@@ -185,9 +192,10 @@
         <h3>© Copyright Joual Mohamed - All Rights Reserved</h3>
     </footer>
 
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="validation.js"></script>
     <script src="main.js"></script>
+    
     <script src="effects.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </body>
 </html>

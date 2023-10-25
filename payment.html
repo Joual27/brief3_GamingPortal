@@ -10,12 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Assets/Css/styles.css">
+    <link rel="stylesheet" href="Assets/Css/responsive.css">
     <title>Payment</title>
 </head>
 
 <body>
-    <main>
-        <button><a href="">Back to shop</a></button>
+    <main class="payments">
+        <div class="payment-title">
+            <h2>Payment Processing</h2>
+        </div>
         <div class="payment-section">
             <div class="payment-methods">
                 <h3>How You Would Like To Pay?</h3>
@@ -31,7 +34,7 @@
                     <div class="cryptos">
                         <h3>Crypto Payments</h3>
                         <div class="methods">
-                            <img src="Assets/Pictures/bitcoin.png" alt="">
+                            <img src="Assets/Pictures/bitcoion.png" alt="">
                             <img src="Assets/Pictures/solana.png" alt="">
                             <img src="Assets/Pictures/ethereum.png" alt="">
                         </div>
@@ -42,8 +45,8 @@
                 <div class="item">
                     <div class="item-infos">
                         <div>
-                            <img src="Assets/Pictures/cyber cars.jpg" alt="">
-                            <p class="payment-title">The City Of Dreams</p> 
+                            <img id="game1" src="Assets/Pictures/cyberpunk77.jpg" alt="">
+                            <p class="payment-title">Dreams City</p> 
                         </div>
                         <p>34.99 $</p>
                     </div>
@@ -72,9 +75,12 @@
                     </div> 
                 </div>
                 <div class="pay">
-                    <button>Continue To Payment</button>
-                    <a class="cancel-payment" href="about.html#mobile-games">Cancel Payment</a>
+                    <button class="payBtn">Continue To Payment</button>
+                    <a class="cancel-payment" href="games.html#mobile-games">Cancel Payment</a>
                 </div>
             </div>
+        </div>
+        <div class="payment-back">
+            <button class="buy backBtn"><a href="games.html#mobile-games" target="_self">Back To Shop</a></button>
         </div>
     </main>

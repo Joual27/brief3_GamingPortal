@@ -1,5 +1,5 @@
 @media screen and (max-width : 767px){
-
+    
     .nav-items{
         display: none;
     }
@@ -11,7 +11,7 @@
     }
     .nav-items2{
         font-weight: 600;
-        margin-right: 9.2rem;
+        margin-right: 30%;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -56,6 +56,10 @@
     .main-grid-item2{
         min-height: 300px;
         width: 100%;
+        
+    }
+    #game-desc2{
+       margin-left: 12.5%;
     }
 
     #Desktop-games{
@@ -118,6 +122,9 @@
     footer h3{
         font-size: 0.7rem;
     }
+    footer{
+        margin-top: 2.5rem;
+    }
 
 
     .about-history{
@@ -159,4 +166,135 @@
     .faq-container{
         width: 100%;
     }
+
+    .payment-section{
+        flex-direction: column;
+        min-height: 800px;
+        gap: 30px;
+        width: 80%;
+        margin: 2rem 10% ;
+    }
+    .order-summary{
+        width: 100%;
+    }
+
+    .payment-methods{
+        width: 100%;
+    }
+
+    .payment-back{
+        margin-bottom: 2rem;
+    }
 } 
+
+@media screen and (min-width : 768px ) and (max-width : 1023px) {
+    .arrow{
+        left: 46%;
+    }
+    .desc-container {
+        flex-direction: column;
+    }
+    .desc-container img, .desc-content{
+        width: 80%;
+        margin: 1rem 10%;
+    }
+    .desc-content h3{
+        text-align: center;
+    }
+
+    .articles-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .mobile-content{
+        left: 30%;
+    }
+
+    .articles-card{
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    .compet-infos{
+        margin-top: 90%;
+    }
+
+    .contact-form img{
+        display: none;
+    }
+
+    .contact-form form{
+        width: 80%;
+        margin: 0 10%;
+    }
+    
+
+    
+    .divider{
+      display: none;
+    }
+    .nav-items{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-items2{
+        font-weight: 600;
+        margin-right: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rwm .product-info h3{
+        margin-left: 1.5rem;
+    }
+
+    .grid1-item .game-desc {
+        padding-top: 0.5rem;
+    }
+    .sponsors{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .packs-head{
+        width: 80%;
+        margin: 2rem 10%;
+    }
+    #about2{
+        margin-top: 5rem;
+    }
+   
+    .history-desc{
+       width: 100%;
+    }
+    .history-desc p{
+        text-align: center;
+    }
+   
+    .about-history img{
+        display: none;
+    }
+
+    .streamers-cards{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .streamer{
+        width: 48%;
+    }
+
+    
+    .faq-img{
+        display: none;
+    }
+
+    .faq-container{
+        width: 100%;
+    }
+
+
+}
