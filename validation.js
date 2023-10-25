@@ -8,6 +8,7 @@ if(contactForm){
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
         const number = document.getElementById("number").value;
+        const password = document.getElementById("pw").value;
         
         
         
@@ -65,14 +66,27 @@ if(contactForm){
             return true;
         }
     }
+
+    function checkPw(password){
+        const pwError = document.getElementById("pwError");
+         if(! /^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/.test(password)){
+            pwError.textContent = "password must be at least 8 chars long / 1 uppercase / 1 symbol /1number";
+            return false;
+         }
+         else{
+            return true;
+         }
+
+    }
     
     checkNumber(number);
     checkName(name);
     checkEmail(email);
+    checkPw(password);
     
     
-    if(!checkName(name) ||!checkNumber(number)||!checkEmail(email) ) {
+    if(!checkName(name) ||!checkNumber(number)||!checkEmail(email)||!checkPw(password) ) {
         event.preventDefault();
     } 
-} ,true)
+})
 }
